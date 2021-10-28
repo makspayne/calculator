@@ -5,33 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
+    <script src="index.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="calc">
-        <div class="screen">11110</div>
+        <div class="screen"></div>
+        <div class="answer">0</div>
         <div class="button-container">
-            <div class="buttons clear special" class="buttons">Clear</div>
-            <div class="buttons special">Del</div>
-            <div class="buttons special">/</div>
-            <div class="buttons">7</div>
-            <div class="buttons">8</div>
-            <div class="buttons">9</div>
-            <div class="buttons special">x</div>
-            <div class="buttons">4</div>
-            <div class="buttons">5</div>
-            <div class="buttons">6</div>
-            <div class="buttons special">-</div>
-            <div class="buttons">1</div>
-            <div class="buttons">2</div>
-            <div class="buttons">3</div>
-            <div class="buttons special">+</div>
-            <div class="buttons">00</div>
-            <div class="buttons">0</div>
-            <div class="buttons">.</div>
-            <div class="buttons special">=</div>
+            <div data-key="27" class="buttons clear" class="buttons">Clear</div>
+            <div data-key="8" class="buttons del">Del</div>
+            <div data-key="111" class="buttons special">/</div>
+            <div data-key="103" class="buttons numeral">7</div>
+            <div data-key="104" class="buttons numeral">8</div>
+            <div data-key="105" class="buttons numeral">9</div>
+            <div data-key="106" class="buttons special">x</div>
+            <div data-key="100" class="buttons numeral">4</div>
+            <div data-key="101" class="buttons numeral">5</div>
+            <div data-key="102" class="buttons numeral">6</div>
+            <div data-key="109" class="buttons special">-</div>
+            <div data-key="97" class="buttons numeral">1</div>
+            <div data-key="98" class="buttons numeral">2</div>
+            <div data-key="99" class="buttons numeral">3</div>
+            <div data-key="107" class="buttons special">+</div>
+            <div class="buttons numeral">00</div>
+            <div data-key="96" class="buttons numeral">0</div>
+            <div data-key="110" class="buttons period">.</div>
+            <div data-key="13" class="buttons equal">=</div>
         </div>
     </div>
 </body>

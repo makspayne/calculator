@@ -14,6 +14,7 @@ body {
 
 .calc {
   display: flex;
+  align-content: stretch;
   flex-direction: column;
   width: 400px;
   height: 600px;
@@ -25,6 +26,17 @@ body {
 .screen {
   background-color: #373737;
   padding: 10px;
+  text-align: end;
+  overflow-wrap: break-word;
+  /* flex-grow: 1; */
+  height: 150px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bolder;
+}
+.answer {
+  background-color: #373737;
+  padding: 10px;
   align-self: flex-end;
   flex-grow: 1;
   height: 150px;
@@ -32,6 +44,7 @@ body {
   font-size: 32px;
   font-weight: bolder;
 }
+
 .button-container {
   display: flex;
   flex-wrap: wrap;
@@ -59,11 +72,17 @@ body {
   width: 200px;
 }
 
-.special {
+.special,
+.clear,
+.del,
+.equal {
   color: #e207e1;
 }
 
-.special:hover {
+.special:hover,
+.clear:hover,
+.del:hover,
+.equal:hover {
   /* background-color: #e207e1; */
   background-image: linear-gradient(to bottom right, #d303f9, #ce6d3a);
   color: #373737;
